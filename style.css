@@ -7,7 +7,7 @@ body {
 
 .grid {
 	display: grid;
-	grid-template-columns:(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);
 	gap: 30px;
 }
 
@@ -29,14 +29,14 @@ h2 {
 
 p {
 	font-size: 16px;
-	
 }
 
 .container{
+	justify-content: center;
 	grid-column: span 12;
 	position: relative;
 	width:100%;
-	display: grid;
+	display: flex;
 	flex-wrap: wrap;
 }
 
@@ -86,7 +86,6 @@ p {
 	border-radius: 20px;
 	
 }
-
 
 .container .card2 .imgBx{
 	position: relative;
